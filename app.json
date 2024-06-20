@@ -15,16 +15,44 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "ios": {
+        "permissions": {
+          "camera": {
+            "allowsEditing": true,
+            "aspect": [
+              4,
+              3
+            ]
+          },
+          "mediaLibrary": {
+            "allowsEditing": true,
+            "aspect": [
+              4,
+              3
+            ]
+          }
+        }
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "CAMERA",
+        "CAMERA_ROLL"
+      ],
+      "package": "com.shout68.myapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b6fdb6e3-547d-4243-a194-41044ff7102a"
+      }
     }
   }
 }
